@@ -31,8 +31,8 @@ jobs:
         run: npm ci
 
       # Keep Bookshop packages fresh (optional but helpful)
-      - name: Update Bookshop (optional)
-        run: npx @bookshop/up@latest
+      # - name: Update Bookshop (optional)
+       #  run: npx @bookshop/up@latest
 
       # Generate the component browser into /static/components
       - name: Build Bookshop browser
