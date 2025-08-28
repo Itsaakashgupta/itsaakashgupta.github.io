@@ -6,5 +6,10 @@ menu__settings:
       url: '/projects/'
     - title: 'About'
       url: '/about/'
-    - title: 'Contact'
-      url: '/contact/'
+    - title: 'Pages'
+      HasChildren: true
+      submenu:
+      - url: '/contact/'
+        title: 'Contact'
+      - url: '/resume/'
+        title: 'Download Resume'

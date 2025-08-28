@@ -9,8 +9,8 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: page-heading
-    title: About
-    description:
+    title: My Story
+    description: You might see some changes in future because my life creating new stories every single day
   - _bookshop_name: page-image
     image: /images/page-1.jpg
     image_alt: My best photo
