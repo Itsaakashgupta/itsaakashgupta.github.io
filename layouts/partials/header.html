@@ -4,7 +4,7 @@
       <div class="c-header__inner">
 
         <div class="logo">
-          <a class="logo__link" href="{{ "/" | absURL }}">
+          <a class="logo__link" href="{{ "/" | relURL }}">
           {{ if .Site.Data.general_settings.logo_image }}
             <img class="logo__image" src="{{ .Site.Data.general_settings.logo_image | absURL }}" alt="{{ .Site.Data.general_settings.title }}">
           {{ else }}
@@ -36,7 +36,7 @@
                   {{ range .submenu }}
                   {{ $childURL := .url | absURL }}
                   {{ $active := eq $childURL $pageURL }}
-                  <a href="{{ .url | absURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
+                  <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
                   {{ end }}
                 </div>
               </li>
@@ -44,7 +44,7 @@
               {{ else }}
 
               <li class="nav__item">
-                <a href="{{ .url | absURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
+                <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
               </li>
               {{ end }}
 
