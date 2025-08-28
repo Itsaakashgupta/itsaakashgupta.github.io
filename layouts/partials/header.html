@@ -4,7 +4,7 @@
       <div class="c-header__inner">
 
         <div class="logo">
-          <a class="logo__link" href="{{ "/" | relURL }}">
+          <a class="logo__link" href="{{ "/" | absURL }}">
           {{ if .Site.Data.general_settings.logo_image }}
             <img class="logo__image" src="{{ .Site.Data.general_settings.logo_image | absURL }}" alt="{{ .Site.Data.general_settings.title }}">
           {{ else }}
@@ -26,7 +26,7 @@
               {{ $currentPage := . }}
               {{ range site.Data.navigation.menu__settings.menu__items }}
               {{ $menuURL := .url | absURL }}
-              {{ $pageURL:= $currentPage.Permalink | absURL }}
+              {{ $pageURL := $currentPage.Permalink | absURL }}
               {{ $active := eq $menuURL $pageURL }}
 
               {{ if .HasChildren }}
@@ -36,7 +36,7 @@
                   {{ range .submenu }}
                   {{ $childURL := .url | absURL }}
                   {{ $active := eq $childURL $pageURL }}
-                  <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
+                  <a href="{{ .url | absURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
                   {{ end }}
                 </div>
               </li>
@@ -44,14 +44,14 @@
               {{ else }}
 
               <li class="nav__item">
-                <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
+                <a href="{{ .url | absURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
               </li>
               {{ end }}
 
               {{ end }}
             </ul>
           </div>
-        {{ partial "social-link" . }}
+          {{ partial "social-link" . }}
         </nav>
 
         <div class="nav-button">
