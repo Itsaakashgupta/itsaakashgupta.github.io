@@ -5,6 +5,11 @@ on:
     branches:
       - main  # change if you use another branch
 
+permissions:         # 👈 add this block
+  contents: write    # allow pushing to gh-pages
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
