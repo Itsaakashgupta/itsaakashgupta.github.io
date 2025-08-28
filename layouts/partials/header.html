@@ -37,7 +37,7 @@
                   {{ range .submenu }}
                   {{ $childURL := .url | absLangURL }}
                   {{ $active := eq $childURL $pageURL }}
-                  <a href="{{ .url }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
+                  <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
                   {{ end }}
                 </div>
               </li>
@@ -45,7 +45,7 @@
               {{ else }}
 
               <li class="nav__item">
-                <a href="{{ .url }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
+                <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
               </li>
               {{ end }}
 

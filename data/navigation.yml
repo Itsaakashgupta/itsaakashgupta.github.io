@@ -4,12 +4,7 @@ menu__settings:
       url: '/'
     - title: 'Projects'
       url: '/projects/'
-    - title: 'Blog'
-      url: '/blog/'
-    - title: 'Pages'
-      HasChildren: true
-      submenu:
-      - url: '/about/'
-        title: 'About'
-      - url: '/elements/'
-        title: 'Elements'
+    - title: 'About'
+      url: '/about/'
+    - title: 'Contact'
+      url: '/contact/'

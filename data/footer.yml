@@ -8,8 +8,8 @@ footer_menu__settings:
       url: '/elements/'
     - title: 'About'
       url: '/about/'
-    - title: 'Blog'
+    ## - title: 'Blog'
       url: '/blog/'
 
 copyright_text_html: >-
-  <p> 2022 &copy; <a href="/">Vonge</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>
+  <p>© 2025 Akash Gupta. All Rights Reserved.</p>
