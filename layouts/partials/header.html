@@ -1,13 +1,12 @@
-<!-- begin header -->
 <header class="c-header">
   <div class="container">
     <div class="row">
       <div class="c-header__inner">
 
         <div class="logo">
-          <a class="logo__link" href="{{ .Site.BaseURL }}">
+          <a class="logo__link" href="{{ "/" | relURL }}">
           {{ if .Site.Data.general_settings.logo_image }}
-            <img class="logo__image" src="{{ .Site.BaseURL }}{{ .Site.Data.general_settings.logo_image }}" alt="{{ .Site.Data.general_settings.title }}">
+            <img class="logo__image" src="{{ .Site.Data.general_settings.logo_image | relURL }}" alt="{{ .Site.Data.general_settings.title }}">
           {{ else }}
             {{ .Site.Data.general_settings.title }}
           {{ end }}
@@ -26,8 +25,8 @@
             <ul class="nav__list list-reset">
               {{ $currentPage := . }}
               {{ range site.Data.navigation.menu__settings.menu__items }}
-              {{ $menuURL := .url | absLangURL }}
-              {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+              {{ $menuURL := .url | relURL }}
+              {{ $pageURL:= $currentPage.Permalink | relURL }}
               {{ $active := eq $menuURL $pageURL }}
 
               {{ if .HasChildren }}
@@ -35,7 +34,7 @@
                 <span class="nav__link dropdown-toggle">{{ .title }} <i class="ion ion-ios-arrow-down arrow-down"></i></span>
                 <div class="dropdown-menu">
                   {{ range .submenu }}
-                  {{ $childURL := .url | absLangURL }}
+                  {{ $childURL := .url | relURL }}
                   {{ $active := eq $childURL $pageURL }}
                   <a href="{{ .url | relURL }}" class="nav__link {{ if $active }}active-link{{ end }}">{{ .title }}</a>
                   {{ end }}
@@ -63,4 +62,3 @@
     </div>
   </div>
 </header>
-<!-- end header -->
