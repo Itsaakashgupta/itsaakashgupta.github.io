@@ -11,5 +11,7 @@ menu__settings:
       submenu:
       - url: '/contact/'
         title: 'Contact'
-      - url: '/resume/'
-        title: 'Download Resume'
+      - url: 'https://github.com/Itsaakashgupta'
+        title: 'Github'
+      - url: 'https://public.tableau.com/app/profile/itsaakashgupta'
+        title: 'Tableau'

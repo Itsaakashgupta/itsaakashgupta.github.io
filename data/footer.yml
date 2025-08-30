@@ -7,6 +7,6 @@ footer_menu__settings:
     - title: 'About'
       url: '/about/'
     - title: 'Resume'
-      url: '/resume'
+      url: '/resume.pdf'
 copyright_text_html: >-
   <p>© 2025 Akash Gupta. All Rights Reserved.</p>
