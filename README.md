@@ -1,51 +1,82 @@
-# Vonge
+# Akash Gupta — Data Analytics Portfolio (Hugo + Bookshop)
 
-Vonge is a Personal portfolio/blog site template for Hugo. Browse through a [live demo](https://joyous-penguin.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+This is my personal portfolio built with Hugo (extended) and CloudCannon Bookshop components. It showcases projects, blog posts, and a short About section.
 
+Live site: https://itsaakashgupta.github.io/
 
-Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
-The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
+## Highlights
 
-Find more templates, themes and step-by-step Hugo tutorials at [CloudCannon Tutorials](http://cloudcannon.com/tutorials/).
+- Projects grid with manual ordering using `weight` (higher appears first)
+- About section on the homepage renders rich HTML from the About page
+- Excel workbook embedded via Microsoft Office Online Viewer (public URL)
+- GitHub Pages deployment via a workflow (`.github/workflows/hugo.yml`)
+- Goldmark configured to allow raw HTML in Markdown
 
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-hugo-bookshop-template)
-## Features
+## Getting started
 
-* Component library for website building
-* Fully configurable Website
-* Pre-built pages
-* Pre-styled components
-* Blog
-* Category pages
-* Testimonials
-* Portfolio
-* Portfolio tags
-* Live editing with [CloudCannon](http://cloudcannon.com/)
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Search engine optimisation
+Prerequisites:
+- Hugo extended (v0.148+ recommended)
+- Node 18+ only if you want to use the optional Bookshop component browser
 
-## Develop
+Local development:
 
-To run locally:
 ```bash
-hugo serve
+# serve with drafts
+hugo server -D
 ```
 
-To generate the component browser:
-```bash
-npm run bookshop-browser
-```
-This will create browser files in the site's static directory. Running a Hugo build after this will show a live component browser at `/components` 
+Build for production:
 
-If there is a bookshop error when running locally, try updating bookshop:
 ```bash
-npx @bookshop/up@latest
+hugo --minify
 ```
 
-## Structure
-The bookshop components live in `component-library`, which is loaded as a Hugo module in `site/config.toml`.
+## Deployment (GitHub Pages)
 
-The site also pulls in the main dependency of `github.com/cloudcannon/bookshop/hugo/v3`.
+Deployment is automated via `.github/workflows/hugo.yml`. Pushing to `main` builds the site and publishes the `public/` output to the `gh-pages` branch.
 
-For further help with Bookshop, see the [Bookshop Guides](https://github.com/CloudCannon/bookshop).
+## Project ordering (featured first)
+
+Projects are now sorted by `weight` (descending). Add a `weight` field to a project’s front matter to pin it near the top:
+
+
+## Rich About section on the homepage
+
+The homepage “About me” section pulls HTML from the About page’s `content_blocks.content.content_html` and renders it safely, keeping headings and links.
+
+## Notable configuration
+
+- Allow raw HTML in Markdown (required for iframes):
+
+```toml path=null start=null
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+```
+
+File: `config.toml`
+
+## Repository layout (short)
+
+- `content/` — pages, posts, and projects
+- `component-library/` — Bookshop components (HTML, SCSS, metadata)
+- `layouts/` — Hugo templates/partials
+- `assets/` — JS/CSS assets processed by Hugo Pipes
+- `static/` — files served as-is (e.g., `/uploads/...`)
+- `data/` — site settings (navigation, general settings)
+- `resources/` — generated assets from Hugo (safe to regenerate)
+- `.github/workflows/hugo.yml` — GitHub Pages deployment workflow
+
+## Changes made in this repository
+
+- Enabled HTML rendering in Markdown via Goldmark in `config.toml
+- Homepage About preview renders HTML (`safeHTML`) instead of plain text
+- Manual project ordering added (sort by `Weight` desc); SmartDash has `weight: 100`
+
+
+## License
+
+MIT (see `LICENSE`).
