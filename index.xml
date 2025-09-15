@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Akash Gupta| Data Analyst</title><link>https://itsaakashgupta.github.io/</link><description>Recent content on Akash Gupta| Data Analyst</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 10 Jan 2021 05:20:35 +0300</lastBuildDate><atom:link href="https://itsaakashgupta.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Sales Performance Dashboard – Excel</title><link>https://itsaakashgupta.github.io/projects/excel-dashboard/</link><pubDate>Sun, 10 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/excel-dashboard/</guid><description>&lt;h1 id="ankita-store-date-analysis-interactive-dashboard-creation-using-ms-excel"&gt;Ankita-Store-Date-Analysis (Interactive Dashboard creation using MS Excel)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Developed an interactive sales performance dashboard in Excel, incorporating pivot
-tables, slicers, and dynamic charts.&lt;/li&gt;
-&lt;li&gt;Visualized key performance indicators (KPIs), including total sales and regional
-performance metrics, enabling quick executive reporting and informed decision support.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="project-objective"&gt;Project Objective&lt;/h2&gt;
-&lt;p&gt;The Ankita store want to create an annual store report for 2024. So that, The owner of Ankita store can understand their customer purchase behaviour and buying habit and can grow their sales in 2025.&lt;/p&gt;</description></item><item><title>Netflix Content Analysis – PostgreSQL &amp; SQL</title><link>https://itsaakashgupta.github.io/projects/netflix_analysis/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/netflix_analysis/</guid><description>&lt;h1 id="netflix-movies-and-tv-shows-data-analysis-using-sql"&gt;Netflix Movies and TV Shows Data Analysis using SQL&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Analyzed over 6,000 Netflix titles using PostgreSQL to identify content trends by genre,
-release year, and country.&lt;/li&gt;
-&lt;li&gt;Identified significant shifts in original content production and key global content hubs,
-delivering actionable business insights through the use of joins, CTEs, and aggregations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This Project involves a comprehensive analysis of Netflix&amp;rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
-and answers various business questions based on the dataset. The following README provides a detailed of the project&amp;rsquo;s objectives, business
-problems, solutions.&lt;/p&gt;</description></item><item><title>SmartDash - AI Powered Dashboard</title><link>https://itsaakashgupta.github.io/projects/smartdash_project/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/smartdash_project/</guid><description>&lt;p&gt;👉 An AI-ready, user-friendly analytics dashboard for small businesses.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Akash Gupta| Data Analyst</title><link>https://itsaakashgupta.github.io/</link><description>Recent content on Akash Gupta| Data Analyst</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 10 Jan 2021 05:20:35 +0300</lastBuildDate><atom:link href="https://itsaakashgupta.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>SmartDash - AI Powered Dashboard</title><link>https://itsaakashgupta.github.io/projects/smartdash_project/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/smartdash_project/</guid><description>&lt;p&gt;👉 An AI-ready, user-friendly analytics dashboard for small businesses.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;SmartDash&lt;/strong&gt; is a lightweight web app that turns raw sales CSV files into &lt;strong&gt;instant insights&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Use cases:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -36,7 +18,25 @@ problems, solutions.&lt;/p&gt;</description></item><item><title>SmartDash - AI P
 &lt;/ul&gt;
 &lt;h2 id="-demo-screens"&gt;🖼 Demo Screens&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://itsaakashgupta.github.io/images/SmartDash_homepage.jpg" alt="Homepage"&gt;
-&lt;em&gt;&lt;strong&gt;Homepage&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Interactive Sales Insights – Tableau Public</title><link>https://itsaakashgupta.github.io/projects/tableau_dashboard/</link><pubDate>Fri, 08 Jan 2021 06:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/tableau_dashboard/</guid><description>&lt;h1 id="sales-insights-dashboard-in-tableau"&gt;Sales Insights Dashboard in Tableau&lt;/h1&gt;
+&lt;em&gt;&lt;strong&gt;Homepage&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Sales Performance Dashboard – Excel</title><link>https://itsaakashgupta.github.io/projects/excel-dashboard/</link><pubDate>Sun, 10 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/excel-dashboard/</guid><description>&lt;h1 id="ankita-store-date-analysis-interactive-dashboard-creation-using-ms-excel"&gt;Ankita-Store-Date-Analysis (Interactive Dashboard creation using MS Excel)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed an interactive sales performance dashboard in Excel, incorporating pivot
+tables, slicers, and dynamic charts.&lt;/li&gt;
+&lt;li&gt;Visualized key performance indicators (KPIs), including total sales and regional
+performance metrics, enabling quick executive reporting and informed decision support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="project-objective"&gt;Project Objective&lt;/h2&gt;
+&lt;p&gt;The Ankita store want to create an annual store report for 2024. So that, The owner of Ankita store can understand their customer purchase behaviour and buying habit and can grow their sales in 2025.&lt;/p&gt;</description></item><item><title>Netflix Content Analysis – PostgreSQL &amp; SQL</title><link>https://itsaakashgupta.github.io/projects/netflix_analysis/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/netflix_analysis/</guid><description>&lt;h1 id="netflix-movies-and-tv-shows-data-analysis-using-sql"&gt;Netflix Movies and TV Shows Data Analysis using SQL&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzed over 6,000 Netflix titles using PostgreSQL to identify content trends by genre,
+release year, and country.&lt;/li&gt;
+&lt;li&gt;Identified significant shifts in original content production and key global content hubs,
+delivering actionable business insights through the use of joins, CTEs, and aggregations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This Project involves a comprehensive analysis of Netflix&amp;rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
+and answers various business questions based on the dataset. The following README provides a detailed of the project&amp;rsquo;s objectives, business
+problems, solutions.&lt;/p&gt;</description></item><item><title>Interactive Sales Insights – Tableau Public</title><link>https://itsaakashgupta.github.io/projects/tableau_dashboard/</link><pubDate>Fri, 08 Jan 2021 06:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/tableau_dashboard/</guid><description>&lt;h1 id="sales-insights-dashboard-in-tableau"&gt;Sales Insights Dashboard in Tableau&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Built an interactive Tableau sales dashboard featuring dynamic filters, KPIs, and visual &lt;br&gt;
 breakdowns by region, time, and sub-category to deliver clear business insights.&lt;/li&gt;
