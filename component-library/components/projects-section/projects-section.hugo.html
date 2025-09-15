@@ -62,7 +62,9 @@
 
 {{ if .show_projects }}
           <div class="row">
-            {{ range where site.RegularPages "Section" "projects" | first 6 }}
+            {{ $pages := where site.RegularPages "Section" "projects" }}
+            {{ $sorted := sort $pages "Weight" "desc" }}
+            {{ range first 6 $sorted }}
               {{ partial "bookshop" (slice "project-card" (dict 
                 "url" .RelPermalink 
                 "image" .Params.image 

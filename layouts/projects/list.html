@@ -2,7 +2,9 @@
 {{ if not .Params.content_blocks }}
 <div class="container animate">
   <div class="row">
-    {{ range where site.RegularPages "Section" "projects" }}
+    {{ $pages := where site.RegularPages "Section" "projects" }}
+    {{ $sorted := sort $pages "Weight" "desc" }}
+    {{ range $sorted }}
       {{ partial "bookshop" (slice "project-card" (dict 
         "url" .RelPermalink 
         "image" .Params.image 

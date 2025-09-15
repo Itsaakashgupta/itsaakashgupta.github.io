@@ -8,6 +8,7 @@ image: '/images/smartdash1.jpg'
 demo_url: 'https://smartdash-analytics.streamlit.app/'
 repo_url: 'https://github.com/Itsaakashgupta/SmartDash'
 huggingface_url: 'https://huggingface.co/spaces/itsaakashgupta/smartdash-analytics'
+weight: 100
 seo:
   page_description: 
   canonical_url: 
