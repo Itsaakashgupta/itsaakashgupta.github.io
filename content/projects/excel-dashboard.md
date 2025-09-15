@@ -27,29 +27,8 @@ The Ankita store want to create an annual store report for 2024. So that, The ow
 
 > **Download Worked File** - [***Click Here***](/uploads/store_analysis.xlsx)
 
-<iframe id="excel-embed" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
-<div id="excel-fallback" style="font-size:14px;margin-top:8px;color:#666"></div>
-<script>
-  (function () {
-    var isLocal = /^(localhost|127\.0\.0\.1)$/i.test(window.location.hostname);
-    // Public URL where the site is deployed (ensure this file exists after deploy)
-    var prodFileUrl = 'https://itsaakashgupta.github.io/uploads/store_analysis.xlsx';
-    var fileUrl = isLocal ? prodFileUrl : (window.location.origin + '/uploads/store_analysis.xlsx');
-
-    var src = 'https://view.officeapps.live.com/op/embed.aspx?src=' + encodeURIComponent(fileUrl) +
-      '&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True';
-
-    var iframe = document.getElementById('excel-embed');
-    if (iframe) iframe.src = src;
-
-    // Helpful hint for local dev
-    var hint = 'Note: Live Excel preview requires a publicly accessible file. On localhost this uses the deployed file: ' + prodFileUrl + ' .';
-    var fb = document.getElementById('excel-fallback');
-    if (fb) {
-      fb.innerHTML = hint + ' If the preview fails, <a href="' + prodFileUrl + '" target="_blank" rel="noopener">open the workbook directly</a>.';
-    }
-  })();
-</script>
+<iframe width="100%" height="700" frameborder="0" scrolling="no" src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fitsaakashgupta.github.io%2Fuploads%2Fstore_analysis.xlsx&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True"></iframe>
+<p style="font-size:14px;margin-top:8px;color:#666">If the preview does not load, open the workbook directly: <a href="https://itsaakashgupta.github.io/uploads/store_analysis.xlsx" target="_blank" rel="noopener">store_analysis.xlsx</a>.</p>
 
 ## Process
   - Verify data for any missing values and anomalies, and sort out the same
