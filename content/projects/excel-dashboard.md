@@ -27,7 +27,7 @@ The Ankita store want to create an annual store report for 2024. So that, The ow
 
 > **Download Worked File** - [***Click Here***](/uploads/store_analysis.xlsx)
 
-<iframe width="100%" height="700" frameborder="0" scrolling="no" src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fitsaakashgupta.github.io%2Fuploads%2Fstore_analysis.xlsx&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True"></iframe>
+<iframe width="1000" height="700" frameborder="0" scrolling="no" src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fitsaakashgupta.github.io%2Fuploads%2Fstore_analysis.xlsx&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True"></iframe>
 <p style="font-size:14px;margin-top:8px;color:#666">If the preview does not load, open the workbook directly: <a href="https://itsaakashgupta.github.io/uploads/store_analysis.xlsx" target="_blank" rel="noopener">store_analysis.xlsx</a>.</p>
 
 ## Process
