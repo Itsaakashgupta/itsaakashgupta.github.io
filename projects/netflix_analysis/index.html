@@ -1,0 +1,135 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Netflix content analysis – postgre SQL & SQL | Akash Gupta | Data Analyst</title><meta name=description content><meta property="og:description" content="Netflix Movies and TV Shows Data Analysis using SQL
+
+Analyzed over 6,000 Netflix titles using PostgreSQL to identify content trends by genre,
+release year, and country.
+Identified significant shifts in original content production and key global content hubs,
+delivering actionable business insights through the use of joins, CTEs, and aggregations.
+
+Overview
+This Project involves a comprehensive analysis of Netflix&rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
+and answers various business questions based on the dataset. The following  README provides a detailed of the project&rsquo;s objectives, business
+problems, solutions."><link rel=canonical href=/projects/netflix_analysis/><meta property="og:image" content="https://itsaakashgupta.github.io/images/netflix_logo.png"><meta name=twitter:image content="https://itsaakashgupta.github.io/images/netflix_logo.png"><meta name=twitter:creator content><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Netflix Content Analysis – PostgreSQL & SQL | Akash Gupta | Data Analyst"><meta name=twitter:description content="Netflix Movies and TV Shows Data Analysis using SQL
+
+Analyzed over 6,000 Netflix titles using PostgreSQL to identify content trends by genre,
+release year, and country.
+Identified significant shifts in original content production and key global content hubs,
+delivering actionable business insights through the use of joins, CTEs, and aggregations.
+
+Overview
+This Project involves a comprehensive analysis of Netflix&rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
+and answers various business questions based on the dataset. The following  README provides a detailed of the project&rsquo;s objectives, business
+problems, solutions."><meta property="og:type" content="website"><meta property="og:title" content="Netflix Content Analysis – PostgreSQL & SQL | Akash Gupta | Data Analyst"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel=stylesheet><link href=https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css rel=stylesheet><link rel=stylesheet href=https://itsaakashgupta.github.io/css/bookshop.min.be3a04da5c56b4ca314473eb1ed80f290c9c34da96d61ada65c0819e14bd26c9.css></head><body><header class=c-header><div class=container><div class=row><div class=c-header__inner><div class=logo><a class=logo__link href=https://itsaakashgupta.github.io/><img class=logo__image src=https://itsaakashgupta.github.io//images/logo.svg alt="Akash Gupta | Data Analyst"></a></div><nav class=main-nav><div class=main-nav__box><div class=nav__icon-close><i class="ion ion-md-close"></i></div><div class=nav__title>Menu</div><ul class="nav__list list-reset"><li class=nav__item><a href=/ class=nav__link>Home</a></li><li class=nav__item><a href=/projects/ class=nav__link>Projects</a></li><li class=nav__item><a href=/about/ class=nav__link>About</a></li><li class="nav__item dropdown"><span class="nav__link dropdown-toggle">Pages <i class="ion ion-ios-arrow-down arrow-down"></i></span><div class=dropdown-menu><a href=/#contact class=nav__link>Contact</a>
+<a href=https://github.com/Itsaakashgupta class=nav__link>Github</a>
+<a href=https://public.tableau.com/app/profile/itsaakashgupta class=nav__link>Tableau</a></div></li></ul></div><div class=social><ul class="social__list list-reset"><li class=social__item><a class=social__link href=https://github.com/Itsaakashgupta target=_blank rel=noopener aria-label="Github icon"><i class="ion ion-logo-github"></i></a></li><li class=social__item><a class=social__link href=https://www.linkedin.com/in/itsaakash-gupta target=_blank rel=noopener aria-label="LinkedIn icon"><i class="ion ion-logo-linkedin"></i></a></li><li class=social__item><a class=social__link href=https://www.instagram.com/itsaakashgupta target=_blank rel=noopener aria-label="Instagram icon"><i class="ion ion-logo-instagram"></i></a></li></ul></div></nav><div class=nav-button><i class="nav__icon nav__icon-menu ion ion-md-menu"></i></div></div></div></div></header><div class=container><div class=container><div class=c-page-heading><div class=project-tags><span class=project-tags__tag>SQL</span>
+<span class=project-tags__tag>PostgreSQL</span></div><h1 class=c-page-heading__title>Netflix Content Analysis – PostgreSQL & SQL</h1><p class=c-page-heading__description>Performed PostgreSQL analysis to uncover genre distribution and country-level trends in Netflix content.</p><div class=c-page-heading__actions><a class="c-page-heading__action c-page-heading__action--secondary" href=https://github.com/Itsaakashgupta/netflix_project target=_blank rel="noopener noreferrer">GitHub</a></div></div></div><div class=container><div class=row><div class="col col-12"><div class="c-page-image animate"><img loading=lazy src=/images/netflix_logo.png alt="Netflix Content Analysis – PostgreSQL & SQL"></div></div></div></div><div class="page animate"><h1 id=netflix-movies-and-tv-shows-data-analysis-using-sql>Netflix Movies and TV Shows Data Analysis using SQL</h1><ul><li>Analyzed over 6,000 Netflix titles using PostgreSQL to identify content trends by genre,
+release year, and country.</li><li>Identified significant shifts in original content production and key global content hubs,
+delivering actionable business insights through the use of joins, CTEs, and aggregations.</li></ul><h2 id=overview>Overview</h2><p>This Project involves a comprehensive analysis of Netflix&rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
+and answers various business questions based on the dataset. The following README provides a detailed of the project&rsquo;s objectives, business
+problems, solutions.</p><h2 id=objective>Objective</h2><ol><li>Analyze the distribution of content type (Movies vs TV Shows).</li><li>Identify the most common ratings for movies and TV shows.</li><li>List and analyze content based on release years, countries, and durations.</li><li>Explore and categorize content based on specific criteria and keywords.</li></ol><h2 id=dataset>Dataset</h2><p>The data for the project is sourced from the Kaggle dataset - <a href=https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows>Movies Dataset</a></p><blockquote><p><strong>Download</strong> - <a href=/uploads/netflix_titles.csv>netflix_csv</a></p></blockquote><h2 id=schema>Schema</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Create</span> <span style=color:#66d9ef>Table</span> netflix
+</span></span><span style=display:flex><span>(
+</span></span><span style=display:flex><span>	show_id	Varchar(<span style=color:#ae81ff>6</span>),
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>type</span> Varchar(<span style=color:#ae81ff>10</span>),
+</span></span><span style=display:flex><span>	title Varchar(<span style=color:#ae81ff>150</span>),
+</span></span><span style=display:flex><span>	director Varchar(<span style=color:#ae81ff>250</span>),
+</span></span><span style=display:flex><span>	casts Varchar(<span style=color:#ae81ff>1000</span>),
+</span></span><span style=display:flex><span>	country Varchar(<span style=color:#ae81ff>150</span>),
+</span></span><span style=display:flex><span>	date_added Varchar(<span style=color:#ae81ff>150</span>),
+</span></span><span style=display:flex><span>	release_year INT,
+</span></span><span style=display:flex><span>	rating Varchar(<span style=color:#ae81ff>250</span>),
+</span></span><span style=display:flex><span>	duration Varchar(<span style=color:#ae81ff>250</span>),
+</span></span><span style=display:flex><span>	listed_in Varchar(<span style=color:#ae81ff>100</span>),
+</span></span><span style=display:flex><span>	description Varchar(<span style=color:#ae81ff>250</span>)
+</span></span><span style=display:flex><span>)
+</span></span></code></pre></div><h2 id=business-problem-and-solutions>Business Problem and Solutions</h2><h3 id=1-count-the-number-of-movies-vs-tv-shows>1. Count the number of Movies vs TV Shows</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span>
+</span></span><span style=display:flex><span>   <span style=color:#66d9ef>type</span>,
+</span></span><span style=display:flex><span>   <span style=color:#66d9ef>Count</span>(<span style=color:#f92672>*</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Group</span> <span style=color:#66d9ef>By</span> <span style=color:#66d9ef>type</span>
+</span></span></code></pre></div><h3 id=2-find-the-most-common-rating-for-movies-and-tv-shows>2. Find the most common rating for movies and Tv shows</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>type</span>,
+</span></span><span style=display:flex><span>  rating
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span>
+</span></span><span style=display:flex><span>(
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>Select</span> 
+</span></span><span style=display:flex><span>	     <span style=color:#66d9ef>type</span>,
+</span></span><span style=display:flex><span>		 rating,
+</span></span><span style=display:flex><span>		 <span style=color:#66d9ef>Count</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> total_content,
+</span></span><span style=display:flex><span>		 Rank() Over(Partition <span style=color:#66d9ef>By</span> <span style=color:#66d9ef>type</span> <span style=color:#66d9ef>order</span> <span style=color:#66d9ef>By</span> <span style=color:#66d9ef>Count</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>Desc</span>) <span style=color:#66d9ef>as</span> ranking 
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>Group</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>--Order By 1,3 Desc
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>) <span style=color:#66d9ef>As</span> t1
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> ranking <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><h3 id=3-list-all-movies-released-in-a-specific-yeareg-2020>3. List all Movies released in a specific year(e.g. 2020)</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> 
+</span></span><span style=display:flex><span>  <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix 
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> <span style=color:#66d9ef>type</span><span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Movie&#39;</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>And</span>
+</span></span><span style=display:flex><span>	  release_year <span style=color:#f92672>=</span> <span style=color:#ae81ff>2020</span>
+</span></span></code></pre></div><h3 id=4-find-the-top-5-countries-with-the-most-content-on-netflix>4. Find the top 5 countries with the most content on Netflix</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span>
+</span></span><span style=display:flex><span>   <span style=color:#66d9ef>unnest</span>(String_To_Array(country,<span style=color:#e6db74>&#39;,&#39;</span>)) <span style=color:#66d9ef>as</span> new_country,
+</span></span><span style=display:flex><span>   <span style=color:#66d9ef>count</span>(show_id) <span style=color:#66d9ef>as</span> total_content
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Group</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Order</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>2</span> <span style=color:#66d9ef>Desc</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Limit</span> <span style=color:#ae81ff>5</span>
+</span></span></code></pre></div><h3 id=5-identify-the-longest-movie>5. Identify the longest Movie</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> <span style=color:#66d9ef>type</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Movie&#39;</span>
+</span></span><span style=display:flex><span>       <span style=color:#66d9ef>And</span>
+</span></span><span style=display:flex><span>	   duration <span style=color:#f92672>=</span> (<span style=color:#66d9ef>select</span> <span style=color:#66d9ef>max</span>(duration) <span style=color:#66d9ef>From</span> netflix)
+</span></span></code></pre></div><h3 id=6-find-the-content-added-in-the-last-five-year>6. Find the content added in the last Five Year</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> 
+</span></span><span style=display:flex><span>   To_date(date_added, <span style=color:#e6db74>&#39;Month DD, YYYY&#39;</span>) <span style=color:#f92672>&gt;=</span> <span style=color:#66d9ef>Current_Date</span> <span style=color:#f92672>-</span> Interval <span style=color:#e6db74>&#39;5 Year&#39;</span>
+</span></span></code></pre></div><h3 id=7-find-all-moviestv-shows-by-director-rajiv-chilaka>7. Find all Movies/Tv shows by director &lsquo;Rajiv Chilaka&rsquo;</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> director <span style=color:#66d9ef>ILIKE</span> <span style=color:#e6db74>&#39;%Rajiv Chilaka%&#39;</span>
+</span></span></code></pre></div><h3 id=8-list-all-the-tv-shows-with-more-than-5-seasons>8. List all the Tv shows with more than 5 seasons</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> <span style=color:#66d9ef>type</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;TV Show&#39;</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>And</span>
+</span></span><span style=display:flex><span>	  Split_Part(duration, <span style=color:#e6db74>&#39; &#39;</span> , <span style=color:#ae81ff>1</span>) :: numeric<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>5</span>
+</span></span></code></pre></div><h3 id=9-count-the-number-of-content-items-in-each-genre>9. Count the number of content items in each genre</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> 
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>Unnest</span>(String_to_Array(listed_in, <span style=color:#e6db74>&#39;,&#39;</span>)) <span style=color:#66d9ef>as</span> genre,
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>count</span>(show_id) <span style=color:#66d9ef>as</span> total_content
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Group</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Order</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>2</span> <span style=color:#66d9ef>Desc</span>
+</span></span></code></pre></div><h3 id=10-list-all-movies-that-are-documentaries>10. List all movies that are documentaries</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> listed_in <span style=color:#66d9ef>ILIKE</span> <span style=color:#e6db74>&#39;%documentaries%&#39;</span>
+</span></span></code></pre></div><h3 id=11-find-all-the-content-without-directors>11. Find all the content without directors</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> director <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NULL</span>
+</span></span></code></pre></div><h3 id=12-find-how-many-movies-actor-salman-khan-appeared-in-last-10-years>12. Find how many Movies actor &lsquo;Salman Khan&rsquo; appeared in last 10 years</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> 
+</span></span><span style=display:flex><span>    casts <span style=color:#66d9ef>ILIKE</span> <span style=color:#e6db74>&#39;%Salman Khan%&#39;</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>And</span>
+</span></span><span style=display:flex><span>	release_year <span style=color:#f92672>&gt;</span> <span style=color:#66d9ef>Extract</span>(<span style=color:#66d9ef>year</span> <span style=color:#66d9ef>From</span> <span style=color:#66d9ef>Current_date</span>) <span style=color:#f92672>-</span> <span style=color:#ae81ff>10</span>
+</span></span></code></pre></div><h3 id=13-find-the-top-10-actors-who-have-appeared-in-the-highest-number-of-movies-produced-in-india>13. Find the top 10 actors who have appeared in the highest number of Movies produced in India</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>Select</span>
+</span></span><span style=display:flex><span>     <span style=color:#66d9ef>Unnest</span>(String_to_Array(Casts,<span style=color:#e6db74>&#39;,&#39;</span>)) <span style=color:#66d9ef>as</span> actors,
+</span></span><span style=display:flex><span>	 <span style=color:#66d9ef>Count</span>(show_id) <span style=color:#66d9ef>as</span> total_content
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> netflix
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Where</span> country <span style=color:#66d9ef>ILIKE</span> <span style=color:#e6db74>&#39;%India%&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Group</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Order</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>2</span> <span style=color:#66d9ef>DESC</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>LIMIT</span> <span style=color:#ae81ff>10</span>
+</span></span></code></pre></div><h3 id=14-categorize-the-content-based-on-the-presence-of-the-keywords-kill-and-violence-in-the-description-field>14. Categorize the content based on the presence of the keywords &lsquo;Kill&rsquo; and &lsquo;Violence&rsquo; in the description field.</h3><h3 id=label-content-containing-those-keyword-as-bad-and-all-content-as-good-count-how-many-items-fall-into-each-category>Label content containing those keyword as &lsquo;Bad&rsquo; and all content as &lsquo;Good&rsquo;. Count how many items fall into each category</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>With</span> new_table
+</span></span><span style=display:flex><span><span style=color:#66d9ef>AS</span>
+</span></span><span style=display:flex><span>	(<span style=color:#66d9ef>Select</span> <span style=color:#f92672>*</span>,
+</span></span><span style=display:flex><span>	      <span style=color:#66d9ef>Case</span> 
+</span></span><span style=display:flex><span>		    <span style=color:#66d9ef>When</span> 
+</span></span><span style=display:flex><span>			   description <span style=color:#66d9ef>ILIKE</span> <span style=color:#e6db74>&#39;%Kill%&#39;</span>
+</span></span><span style=display:flex><span>			  <span style=color:#66d9ef>Or</span> description <span style=color:#66d9ef>ILIKE</span> <span style=color:#e6db74>&#39;%Violence%&#39;</span>
+</span></span><span style=display:flex><span>			 <span style=color:#66d9ef>Then</span> <span style=color:#e6db74>&#39;Bad content&#39;</span>
+</span></span><span style=display:flex><span>			 <span style=color:#66d9ef>Else</span> <span style=color:#e6db74>&#39;Good Content&#39;</span>
+</span></span><span style=display:flex><span>			 <span style=color:#66d9ef>End</span> category
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>From</span> netflix)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Select</span> 
+</span></span><span style=display:flex><span>    category,
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>count</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> total_content
+</span></span><span style=display:flex><span><span style=color:#66d9ef>From</span> new_table
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Group</span> <span style=color:#66d9ef>By</span> <span style=color:#ae81ff>1</span>
+</span></span></code></pre></div></div><div class=project__navigation><a class=project__prev href=https://itsaakashgupta.github.io/projects/smartdash_project/><div class=project__box><span class=project__nav__info>Next Project</span><h2 class=project__nav__title>SmartDash - AI Powered Dashboard<i class="ion ion-md-arrow-round-forward arrow-right"></i></h2></div></a></div></div><div class=top title=Top><i class="ion ion-ios-arrow-up"></i></div><footer class=footer><div class=container><div class=row><div class="col col-12"><div class=social><ul class="social__list list-reset"><li class=social__item><a class=social__link href=https://github.com/Itsaakashgupta target=_blank rel=noopener aria-label="Github icon"><i class="ion ion-logo-github"></i></a></li><li class=social__item><a class=social__link href=https://www.linkedin.com/in/itsaakash-gupta target=_blank rel=noopener aria-label="LinkedIn icon"><i class="ion ion-logo-linkedin"></i></a></li><li class=social__item><a class=social__link href=https://www.instagram.com/itsaakashgupta target=_blank rel=noopener aria-label="Instagram icon"><i class="ion ion-logo-instagram"></i></a></li></ul></div><ul class="footer_nav list-reset"><li class=footer_nav__item><a href=/ class=footer_nav__link>Home</a></li><li class=footer_nav__item><a href=/projects/ class=footer_nav__link>Projects</a></li><li class=footer_nav__item><a href=/about/ class=footer_nav__link>About</a></li><li class=footer_nav__item><a href=/resume.pdf class=footer_nav__link>Resume</a></li></ul><div class=copyright><p>© 2025 Akash Gupta. All Rights Reserved.</p></div></div></div></div></footer><script src=/js/scripts.min.5910f8ef0fec7722a6b516ad687fa584b0648fa8a9e787d0eaeafec5388e726b.js></script><script src=/js/common.min.ef6338cbbd8602bc48045458bff5653a912d6be0e8521457e6b0a3cf9dbae919.js></script></body></html>

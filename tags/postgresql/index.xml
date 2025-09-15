@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PostgreSQL on Akash Gupta| Data Analyst</title><link>https://itsaakashgupta.github.io/tags/postgresql/</link><description>Recent content in PostgreSQL on Akash Gupta| Data Analyst</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 05:20:35 +0300</lastBuildDate><atom:link href="https://itsaakashgupta.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Netflix Content Analysis – PostgreSQL &amp; SQL</title><link>https://itsaakashgupta.github.io/projects/netflix_analysis/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/netflix_analysis/</guid><description>&lt;h1 id="netflix-movies-and-tv-shows-data-analysis-using-sql"&gt;Netflix Movies and TV Shows Data Analysis using SQL&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzed over 6,000 Netflix titles using PostgreSQL to identify content trends by genre,
+release year, and country.&lt;/li&gt;
+&lt;li&gt;Identified significant shifts in original content production and key global content hubs,
+delivering actionable business insights through the use of joins, CTEs, and aggregations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This Project involves a comprehensive analysis of Netflix&amp;rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
+and answers various business questions based on the dataset. The following README provides a detailed of the project&amp;rsquo;s objectives, business
+problems, solutions.&lt;/p&gt;</description></item></channel></rss>

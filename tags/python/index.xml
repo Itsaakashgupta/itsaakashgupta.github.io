@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Akash Gupta| Data Analyst</title><link>https://itsaakashgupta.github.io/tags/python/</link><description>Recent content in Python on Akash Gupta| Data Analyst</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 05:20:35 +0300</lastBuildDate><atom:link href="https://itsaakashgupta.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>SmartDash - AI Powered Dashboard</title><link>https://itsaakashgupta.github.io/projects/smartdash_project/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/smartdash_project/</guid><description>&lt;p&gt;👉 An AI-ready, user-friendly analytics dashboard for small businesses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SmartDash&lt;/strong&gt; is a lightweight web app that turns raw sales CSV files into &lt;strong&gt;instant insights&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use cases:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Small shops analyzing monthly sales&lt;/li&gt;
+&lt;li&gt;Quick product/region performance checks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-key-features"&gt;✨ Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Auto Column Detection&lt;/strong&gt; for Date, Product, Quantity, Price/Revenue (with manual selectors if needed)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interactive Filters&lt;/strong&gt;: Category, Region, Sales Rep (when available in data)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KPI Cards&lt;/strong&gt;: Total Revenue, Units Sold, Avg Order Value, Top Product/Region&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Charts&lt;/strong&gt;: Sales trend (monthly), Top 5 Products, Revenue by Region&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Insights&lt;/strong&gt;: Quick bullets(seasonality, best weekday, best rep, low performers)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Export&lt;/strong&gt;: Filtered CSV + &lt;strong&gt;styled PDF report&lt;/strong&gt; (light-blue theme + logo placeholder)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile-friendly&lt;/strong&gt; layout with scrollable preview&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session-aware&lt;/strong&gt;: Remembers user selections across uploads in the same session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-demo-screens"&gt;🖼 Demo Screens&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://itsaakashgupta.github.io/images/SmartDash_homepage.jpg" alt="Homepage"&gt;
+&lt;em&gt;&lt;strong&gt;Homepage&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

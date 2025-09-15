@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tableau on Akash Gupta| Data Analyst</title><link>https://itsaakashgupta.github.io/tags/tableau/</link><description>Recent content in Tableau on Akash Gupta| Data Analyst</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 08 Jan 2021 06:20:35 +0300</lastBuildDate><atom:link href="https://itsaakashgupta.github.io/tags/tableau/index.xml" rel="self" type="application/rss+xml"/><item><title>Interactive Sales Insights – Tableau Public</title><link>https://itsaakashgupta.github.io/projects/tableau_dashboard/</link><pubDate>Fri, 08 Jan 2021 06:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/tableau_dashboard/</guid><description>&lt;h1 id="sales-insights-dashboard-in-tableau"&gt;Sales Insights Dashboard in Tableau&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Built an interactive Tableau sales dashboard featuring dynamic filters, KPIs, and visual &lt;br&gt;
+breakdowns by region, time, and sub-category to deliver clear business insights.&lt;/li&gt;
+&lt;li&gt;Enabled data-driven decision-making by highlighting performance trends, optimizing&lt;br&gt;
+storytelling with clean layout, and showcasing key profit and quantity metrics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src="https://public.tableau.com/views/Dashboard1_17512989779320/SalesDashboard?:showVizHome=no&amp;:embed=true"
+ width="1000" height="700" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This project presents an interactive Tableau Sales Dashboard that consolidates key performance indicators (KPIs) for sales analysis. It enables users to monitor sales trends, revenue distribution, and performance by categories such as product, region, and time. The dashboard is designed for business managers and analysts to quickly understand performance drivers.&lt;/p&gt;</description></item></channel></rss>
