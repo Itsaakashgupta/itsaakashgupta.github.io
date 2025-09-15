@@ -8,19 +8,35 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  # Keep legacy nested shape for compatibility
   project:
     title: ""
     subtitle: ""
     image: ""
     url: ""
+    demo_url: ""
+    repo_url: ""
+    tags: []
+  # Also expose flat fields to align with partial usage
+  title: ""
+  subtitle: ""
+  description: ""
+  image: ""
+  url: ""
+  demo_url: ""
+  repo_url: ""
+  tags: []
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  project:
-    title: Hello World
-    subtitle: Lorem Ipsum
-    image: https://placekitten.com/800/400
-    url: /
+  title: Hello World
+  subtitle: Lorem Ipsum
+  image: https://placekitten.com/800/400
+  url: /
+  description: Example description
+  demo_url: https://example.com
+  repo_url: https://github.com/example/repo
+  tags: [example, demo]
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

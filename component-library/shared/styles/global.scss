@@ -46,3 +46,6 @@
 //         opacity: 0.75;
 //     }
 // }
+
+/* Prevent horizontal overflow on all pages */
+html, body { overflow-x: hidden; }

@@ -5,12 +5,23 @@
   <div class="{{$c}}">
     <div class="project-tags">
       {{ range $index, $tag := .tags }}
-        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize}}" class="project-tags__tag">{{ $tag }}</a>
+        <span class="project-tags__tag">{{ $tag }}</span>
       {{ end }}
     </div>
-    <h1 class="{{$c}}__title">{{ humanize .title }}</h1>
+    <h1 class="{{$c}}__title">{{ .title }}</h1>
     {{ if .description }}
       <p class="{{$c}}__description">{{ .description }}</p>
     {{ end }}
+    <div class="{{$c}}__actions">
+      {{ if .demo_url }}
+      <a class="{{$c}}__action {{$c}}__action--primary {{ if findRE "tableau\\.com" .demo_url }}{{$c}}__action--tableau{{ else if findRE "streamlit\\.(app|io)" .demo_url }}{{$c}}__action--streamlit{{ else }}{{$c}}__action--demo{{ end }}" href="{{ .demo_url }}" target="_blank" rel="noopener noreferrer">{{ if findRE "tableau\\.com" .demo_url }}Tableau{{ else if findRE "streamlit\\.(app|io)" .demo_url }}Streamlit{{ else }}Demo{{ end }}</a>
+      {{ end }}
+      {{ if .huggingface_url }}
+      <a class="{{$c}}__action {{$c}}__action--primary {{$c}}__action--huggingface" href="{{ .huggingface_url }}" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+      {{ end }}
+      {{ if .repo_url }}
+      <a class="{{$c}}__action {{$c}}__action--secondary" href="{{ .repo_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {{ end }}
+    </div>
   </div>
 </div>

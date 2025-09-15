@@ -12,12 +12,16 @@ spec:
 blueprint:
   title: ""
   description: ""
+  demo_url: ""
+  repo_url: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   title: My works
   description: I show only my best works built completely with passion,
     simplicity, and creativity!
+  demo_url: https://example.com
+  repo_url: https://github.com/example/repo
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

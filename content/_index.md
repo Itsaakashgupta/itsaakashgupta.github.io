@@ -17,7 +17,7 @@ content_blocks:
     cta_button: Resume
     cta_button_link: 'resume.pdf'
     works_button: See my works
-    works_button_link: 'projects'
+    works_button_link: '#projects'
     tags: []
   - _bookshop_name: projects-section
     title: Recent Projects
@@ -25,18 +25,22 @@ content_blocks:
       <p>Collection of all my projects. To show full project detail, you might have to visit external places. Fell free to checkout!</p>
     link_url: /projects
     show_projects: true
+  - _bookshop_name: about-preview
+    title: About me
+    char_limit: 200
+    link_label: Learn more
   #- _bookshop_name: testimonials-section
     #title: Happy Clients
     description_html:
     show_testimonials: False
-  - _bookshop_name: blog-section
-    title: Recent Posts
+  #- _bookshop_name: blog-section
+    #title: Recent Posts
     description_html: >-
       <p>Vonge blog features productivity, tips, inspiration and strategies for
       massive profits. Find out how to set up a successful blog or how to make
       yours even better!</p>
     link_url: /blog
-    show_posts: true
+    show_posts: false
     #_bookshop_name: newsletter
     # newsletter_title: Join my mailing list
     # newsletter_description: Get inspiration, updates and, cool stuff!

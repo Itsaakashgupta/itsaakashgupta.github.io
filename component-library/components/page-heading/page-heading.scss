@@ -40,4 +40,38 @@
       margin: 24px auto 0;
     }
   }
+
+  &__actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  &__action {
+    display: inline-block;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    color: $white;
+    border-radius: 10px;
+    transition: opacity .2s ease;
+
+    &:hover { opacity: .85; }
+
+    &--primary {
+      background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+    }
+    &--secondary {
+      background: $blue-gray;
+    }
+
+    /* Provider variants to match project cards */
+    &--demo { background: #000000; }
+    &--tableau { background: #FFCC00; color: #000; }
+    &--streamlit { background: #FF4B4B; }
+    &--huggingface { background: #1E90FF; }
+  }
 }

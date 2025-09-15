@@ -1,18 +1,39 @@
 {{ $c := "c-project-card" }}
-<article class="{{$c}} col col-4 col-d-6 col-t-12">
+<article class="{{$c}} col col-6 col-t-12">
   <div class="{{$c}}__content">
     <a href="{{ .url }}" class="{{$c}}__image">
       <img loading="lazy" src="{{ .image }}" alt="{{ .title }}">
     </a>
-    <div class="{{$c}}__info">
-      <div class="{{$c}}__info-wrap">
-        <h3 class="{{$c}}__title">{{ .title }}</h3>
-      </div>
-      <div class="{{$c}}__info-wrap">
-        {{ if .subtitle }}
-        <div class="{{$c}}__subtitle">{{ .subtitle }}</div>
-        {{ end }}
-      </div>  
+  </div>
+  <div class="{{$c}}__body">
+    {{ if .tags }}
+    <div class="{{$c}}__tags">
+      {{ range .tags }}
+        {{ $t := . }}
+        {{ $slug := $t | urlize }}
+        <span class="{{$c}}__tag {{$c}}__tag--{{ $slug }}">{{ $t }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <h3 class="{{$c}}__title">{{ .title }}</h3>
+
+    {{ $desc := .description | default .subtitle }}
+    {{ if $desc }}
+    <p class="{{$c}}__desc">{{ $desc }}</p>
+    {{ end }}
+  </div>
+  <div class="{{$c}}__meta">
+    <div class="{{$c}}__actions">
+      {{ if .demo_url }}
+        <a class="{{$c}}__action {{$c}}__action--primary {{ if findRE "tableau\\.com" .demo_url }}{{$c}}__action--tableau{{ else if findRE "streamlit\\.(app|io)" .demo_url }}{{$c}}__action--streamlit{{ else }}{{$c}}__action--demo{{ end }}" href="{{ .demo_url }}" target="_blank" rel="noopener noreferrer">{{ if findRE "tableau\\.com" .demo_url }}Tableau{{ else if findRE "streamlit\\.(app|io)" .demo_url }}Streamlit{{ else }}Demo{{ end }}</a>
+      {{ end }}
+      {{ if .huggingface_url }}
+        <a class="{{$c}}__action {{$c}}__action--primary {{$c}}__action--huggingface" href="{{ .huggingface_url }}" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+      {{ end }}
+      {{ if .repo_url }}
+      <a class="{{$c}}__action {{$c}}__action--secondary" href="{{ .repo_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {{ end }}
     </div>
   </div>
 </article>

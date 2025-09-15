@@ -60,10 +60,19 @@
             <div class="section__description">{{ .description_html | safeHTML }}</div>
           </div>
 
-          {{ if .show_projects }}
+{{ if .show_projects }}
           <div class="row">
             {{ range where site.RegularPages "Section" "projects" | first 6 }}
-              {{ partial "bookshop" (slice "project-card" (dict "url" .RelPermalink "image" .Params.image "title" .Params.title "subtitle" .Params.subtitle)) }}
+              {{ partial "bookshop" (slice "project-card" (dict 
+                "url" .RelPermalink 
+                "image" .Params.image 
+                "title" .Params.title 
+                "subtitle" .Params.subtitle 
+                "description" .Params.description 
+                "tags" .Params.tags 
+                "demo_url" .Params.demo_url 
+                "huggingface_url" .Params.huggingface_url 
+                "repo_url" .Params.repo_url)) }}
             {{ end }}
           </div>
           {{ end }}

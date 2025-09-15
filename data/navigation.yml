@@ -9,7 +9,7 @@ menu__settings:
     - title: 'Pages'
       HasChildren: true
       submenu:
-      - url: '/contact/'
+      - url: '/#contact'
         title: 'Contact'
       - url: 'https://github.com/Itsaakashgupta'
         title: 'Github'

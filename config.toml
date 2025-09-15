@@ -15,3 +15,10 @@ path = 'local/component-library'
 
 [[module.imports]]
 path = 'github.com/cloudcannon/bookshop/hugo/v3'
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

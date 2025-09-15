@@ -1,0 +1,50 @@
+{{ $c := "c-about-preview" }}
+<section class="section about-preview">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="{{$c}} animate">
+          {{ if .title }}
+          <h2 class="{{$c}}__title">{{ .title }}</h2>
+          {{ end }}
+
+          {{/* Get the About page reliably */}}
+          {{ $about := site.GetPage "page" "about" }}
+          {{ if not $about }}
+            {{ $about = site.GetPage "/about" }}
+          {{ end }}
+
+          {{ if $about }}
+            {{ $limit := .char_limit | default 400 }}
+
+            {{/* Try to pull from About's content_blocks (content_html) first */}}
+            {{ $blocks := $about.Params.content_blocks }}
+            {{ $s := newScratch }}
+            {{ $s.Set "excerpt" "" }}
+            {{ if $blocks }}
+              {{ range $blocks }}
+                {{ if eq ._bookshop_name "content" }}
+                  {{ $s.Set "excerpt" .content_html }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            {{ $excerpt := $s.Get "excerpt" }}
+
+            {{ if $excerpt }}
+              <div class="{{$c}}__excerpt">{{ $excerpt | safeHTML }}</div>
+            {{ else }}
+              {{/* Fallbacks: Summary -> Plain -> Content */}}
+              {{ $fallback := cond (ne (len $about.Summary) 0) $about.Summary (cond (ne (len $about.Plain) 0) $about.Plain ($about.Content | plainify)) }}
+              <p class="{{$c}}__excerpt">{{ $fallback | plainify | truncate $limit }}</p>
+            {{ end }}
+
+            <a class="{{$c}}__link" href="{{ $about.RelPermalink }}">{{ .link_label | default "View all" }}</a>
+          {{ else }}
+            <p class="{{$c}}__excerpt">About page not found.</p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

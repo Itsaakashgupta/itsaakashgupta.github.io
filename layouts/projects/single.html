@@ -4,7 +4,7 @@
 
 <div class="container">
 
-  {{ partial "bookshop" (slice "page-heading" (dict "title" .Params.title "description" .Params.subtitle "tags" .Params.tags)) }}
+  {{ partial "bookshop" (slice "page-heading" (dict "title" .Params.title "description" .Params.subtitle "tags" .Params.tags "demo_url" .Params.demo_url "huggingface_url" .Params.huggingface_url "repo_url" .Params.repo_url)) }}
 
   {{ partial "bookshop" (slice "page-image" (dict "image" .Params.image "image_alt" .Params.title)) }}
 
@@ -26,9 +26,6 @@
 
 </div>
 
-{{ partial "bookshop" (slice "newsletter" (dict "newsletter_title" site.Data.newsletter.newsletter_title
-"newsletter_description" site.Data.newsletter.newsletter_description "newsletter_identifier"
-site.Data.newsletter.newsletter_identifier "newsletter_button" site.Data.newsletter.newsletter_button)) }}
 
 {{ end }}
 
