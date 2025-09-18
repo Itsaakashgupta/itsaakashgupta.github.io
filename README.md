@@ -72,9 +72,41 @@ File: `config.toml`
 
 ## Changes made in this repository
 
-- Enabled HTML rendering in Markdown via Goldmark in `config.toml
-- Homepage About preview renders HTML (`safeHTML`) instead of plain text
-- Manual project ordering added (sort by `Weight` desc); SmartDash has `weight: 100`
+## 🔄 Comparison with Original Template
+
+Here’s what I changed compared to the original **Vonge theme**:
+
+### 1. 🖼️ Homepage Layout
+- **Original:** Showcases creative works/photography grid.  
+- **My Version:** Replaced with a **Project Showcase** highlighting data analytics dashboards and AI projects.  
+
+### 2. 📊 Project Section
+- **Original:** Static gallery-style showcase with images.  
+- **My Version:**  
+  - Added **live project previews** (SmartDash, Excel Dashboards, etc.).  
+  - Introduced **tech-stack badges** (Python, Pandas, Streamlit, Excel, Pivot Tables).  
+  - Added **interactive buttons**: links to **Demo, GitHub, Hugging Face**.  
+  - Each project has a **short description + screenshot** for clarity.  
+
+### 3. 📝 Content Customization
+- Updated all **text content** to reflect:
+  - My **data analytics & AI focus**.  
+  - Professional tone suitable for portfolio showcase.  
+  - Replaced placeholder content with **real project details**.  
+
+### 4. 🎨 Visual Design Tweaks
+- Customized **color accents** and **buttons** (red/blue/black) to highlight actions.  
+- Reorganized sections to keep **projects at the forefront**.  
+- Adjusted **image dimensions** for a clean 16:9 look (LinkedIn friendly).  
+
+### 5. 🔗 Navigation & Links
+- Added external links to:  
+  - **Streamlit apps**  
+  - **Hugging Face Spaces**  
+  - **GitHub repositories**  
+
+### 6. 🚀 Deployment
+- Hosted via **GitHub Pages** for easy sharing.
 
 
 ## License
