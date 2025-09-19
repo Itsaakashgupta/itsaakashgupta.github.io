@@ -31,16 +31,16 @@ content_blocks:
     link_label: Learn more
   #- _bookshop_name: testimonials-section
     #title: Happy Clients
-    description_html:
-    show_testimonials: False
-  #- _bookshop_name: blog-section
-    #title: Recent Posts
-    description_html: >-
-      <p>Vonge blog features productivity, tips, inspiration and strategies for
-      massive profits. Find out how to set up a successful blog or how to make
-      yours even better!</p>
+  #  description_html:
+  #  show_testimonials: False
+  - _bookshop_name: blog-section
+    title: Recent Posts
+    #description_html: >-
+      #<p>Vonge blog features productivity, tips, inspiration and strategies for
+      #massive profits. Find out how to set up a successful blog or how to make
+      #yours even better!</p>
     link_url: /blog
-    show_posts: false
+    show_posts: true
     #_bookshop_name: newsletter
     # newsletter_title: Join my mailing list
     # newsletter_description: Get inspiration, updates and, cool stuff!
