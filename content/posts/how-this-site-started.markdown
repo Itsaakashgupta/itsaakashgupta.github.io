@@ -44,9 +44,9 @@ Each project isn’t just an image but a story, with a description, tech stack, 
 
 ### Manual Project Ordering via *weight*
 
-use a weight field in front matter for the project items and then sort projects by descending weight so featured/important ones appear first.
+- Use a weight field in front matter for the project items and then sort projects by descending weight so featured/important ones appear first.
 
-The original uses default ordering (date or alphabetical) or less flexible ordering.
+- The original uses default ordering (date or alphabetical) or less flexible ordering.
 
 ## 2. **Detailed Project Pages**
 
@@ -66,9 +66,9 @@ Rewrote all placeholder content to reflect my professional journey and skills in
 
 ### Embed Excel Workbook via Microsoft Office Online Viewer
 
-Embedded an Excel workbook or Tableau workbook via an external public URL (Office Online Viewer) in content. This is a custom content / embed not part of original template.
+- Embedded an Excel workbook or Tableau workbook via an external public URL (Office Online Viewer) in content. This is a custom content / embed not part of original template.
 
-Allowing raw HTML in Markdown (Goldmark unsafe etc.) so that embedded iframes, HTML snippets etc. work.
+- Allowing raw HTML in Markdown (Goldmark unsafe etc.) so that embedded iframes, HTML snippets etc. work.
 
 ## 4. Navigation and Flow
 
@@ -76,9 +76,9 @@ Improved navigation by prioritizing Projects, ensuring recruiters land exactly w
 
 ### Repository Structure / Additional Files
 
-Use of content_blocks or similar data to render custom content on homepage (About preview pulling from a content block).
+- Use of content_blocks or similar data to render custom content on homepage (About preview pulling from a content block).
 
-Preview of About on homepage uses HTML rather than plain text.
+- Preview of About on homepage uses HTML rather than plain text.
 
 ## 5. Deployment for Accessibility
 
@@ -86,9 +86,9 @@ Hosted the site via GitHub Pages, making it instantly accessible to anyone witho
 
 ### GitHub Pages Deployment with Workflow
 
-Automated build & deploy workflow (.github/workflows/hugo.yml) so pushing to main triggers build and publishes to gh-pages branch. 
+- Automated build & deploy workflow (.github/workflows/hugo.yml) so pushing to main triggers build and publishes to gh-pages branch. 
 
-The original template includes instructions to run Hugo locally, generate component browser etc., but doesn’t come with pre-made GitHub Actions workflow
+- The original template includes instructions to run Hugo locally, generate component browser etc., but doesn’t come with pre-made GitHub Actions workflow
 
 # Overall Comparison
 
@@ -115,8 +115,6 @@ git clone https://github.com/Itsaakashgupta/itsaakashgupta.github.io.git
 *Install Hugo*
 
 Make sure you have Hugo Extended installed.
-
-Hugo Installation Guide
 
 Check version:
 ```bash
@@ -155,3 +153,6 @@ Select branch (main) and root folder (/).
 ```bash
 https://<your-username>.github.io
 ```
+
+
+### *Same Article on LinkedIn* - [Go To LinkedIn](https://www.linkedin.com/pulse/comprehensive-guide-vonge-hugo-template-akash-kumar-uggxc)
