@@ -106,21 +106,6 @@ The analysis focuses on six key questions:
 | **GitHub** | Project version control and documentation |
 
 
-
-## 📁 Repository Structure
-
-
-
-
-
-## 🎥 Deliverables
-| Item | Description |
-|------|--------------|
-| 📊 **Power BI Dashboard** | [Public Link Here](https://app.powerbi.com/view?r=eyJrIjoiYzBlOGFhYzItMDU5OC00MzgwLTgzN2YtZmVmZGU5MjBhMDM5IiwidCI6ImU4ODI0Y2Q4LTUwY2MtNDA0NS1iYWRmLTQ2ZjI2MjgyYTQ1NCJ9&pageName=887f87325d70d3b794b7) |
-| 💻 **SQL Scripts** | All SQL files in `/Analysis/SQL_queries` folder |
-
-<iframe title="Quickbite_project" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=83cc142f-d3ea-4c1f-ab81-b41ce860039c&autoAuth=true&ctid=72861ff9-34fc-4e2c-b683-00e416f660fc" frameborder="0" allowFullScreen="true"></iframe>
-
 ## 🌟 Learnings
 - Designed a **complete BI workflow** from raw data to insights.  
 - Understood importance of **data validation and integrity** before modeling.  
