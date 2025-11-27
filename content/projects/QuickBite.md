@@ -78,7 +78,7 @@ The analysis focuses on six key questions:
 - Custom theme (`QuickBite Theme.json`) using brand colors (#4E79A7, #F28E2B, #59A14F).
 - Added interactive slicers (Phase, Month, City).
 
-https://app.powerbi.com/reportEmbed?reportId=83cc142f-d3ea-4c1f-ab81-b41ce860039c&autoAuth=true&ctid=72861ff9-34fc-4e2c-b683-00e416f660fc
+<iframe title="Quickbite_project" width="1040" height="620" src="https://app.powerbi.com/reportEmbed?reportId=83cc142f-d3ea-4c1f-ab81-b41ce860039c&autoAuth=true&ctid=72861ff9-34fc-4e2c-b683-00e416f660fc" frameborder="0" allowFullScreen="true"></iframe>
 
 
 ## 🧠 Key Insights
