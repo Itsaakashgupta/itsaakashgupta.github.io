@@ -7,6 +7,7 @@ tags: [PowerBI, MySQL]
 image: '/images/QuickBite Presentation.png'
 demo_url: 'https://app.powerbi.com/view?r=eyJrIjoiYzBlOGFhYzItMDU5OC00MzgwLTgzN2YtZmVmZGU5MjBhMDM5IiwidCI6ImU4ODI0Y2Q4LTUwY2MtNDA0NS1iYWRmLTQ2ZjI2MjgyYTQ1NCJ9&pageName=887f87325d70d3b794b7'
 repo_url: 'https://github.com/Itsaakashgupta/QuickBite_Codebasics'
+weight: 99
 seo:
   page_description: 
   canonical_url: 
@@ -76,6 +77,8 @@ The analysis focuses on six key questions:
 4. **Misconception & Assumptions**
 - Custom theme (`QuickBite Theme.json`) using brand colors (#4E79A7, #F28E2B, #59A14F).
 - Added interactive slicers (Phase, Month, City).
+
+https://app.powerbi.com/reportEmbed?reportId=83cc142f-d3ea-4c1f-ab81-b41ce860039c&autoAuth=true&ctid=72861ff9-34fc-4e2c-b683-00e416f660fc
 
 
 ## 🧠 Key Insights
