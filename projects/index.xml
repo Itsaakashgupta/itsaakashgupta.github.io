@@ -36,7 +36,12 @@ delivering actionable business insights through the use of joins, CTEs, and aggr
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This Project involves a comprehensive analysis of Netflix&amp;rsquo;s movies and TV Shows data using SQL. The is to extract various valuable insights
 and answers various business questions based on the dataset. The following README provides a detailed of the project&amp;rsquo;s objectives, business
-problems, solutions.&lt;/p&gt;</description></item><item><title>Interactive Sales Insights – Tableau Public</title><link>https://itsaakashgupta.github.io/projects/tableau_dashboard/</link><pubDate>Fri, 08 Jan 2021 06:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/tableau_dashboard/</guid><description>&lt;h1 id="sales-insights-dashboard-in-tableau"&gt;Sales Insights Dashboard in Tableau&lt;/h1&gt;
+problems, solutions.&lt;/p&gt;</description></item><item><title>QuickBite Express - Business Recovery Dashboard</title><link>https://itsaakashgupta.github.io/projects/quickbite/</link><pubDate>Sat, 09 Jan 2021 05:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/quickbite/</guid><description>&lt;h2 id="-project-overview"&gt;📘 Project Overview&lt;/h2&gt;
+&lt;p&gt;QuickBite Express, a food delivery startup, faced a major drop in orders, customer satisfaction, and delivery performance during a crisis period.&lt;br&gt;
+This project uses &lt;strong&gt;data analytics and visualization&lt;/strong&gt; to uncover the key causes of decline and recommend &lt;strong&gt;data-driven recovery strategies&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The project was built as part of the &lt;a href="https://codebasics.io/"&gt;Codebasics Power BI Resume Project Challenge&lt;/a&gt;, where participants create end-to-end analytical solutions using real-world business cases.&lt;/p&gt;
+&lt;h2 id="-objectives"&gt;🎯 Objectives&lt;/h2&gt;
+&lt;p&gt;The analysis focuses on six key questions:&lt;/p&gt;</description></item><item><title>Interactive Sales Insights – Tableau Public</title><link>https://itsaakashgupta.github.io/projects/tableau_dashboard/</link><pubDate>Fri, 08 Jan 2021 06:20:35 +0300</pubDate><guid>https://itsaakashgupta.github.io/projects/tableau_dashboard/</guid><description>&lt;h1 id="sales-insights-dashboard-in-tableau"&gt;Sales Insights Dashboard in Tableau&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Built an interactive Tableau sales dashboard featuring dynamic filters, KPIs, and visual &lt;br&gt;
 breakdowns by region, time, and sub-category to deliver clear business insights.&lt;/li&gt;
@@ -46,4 +51,4 @@ storytelling with clean layout, and showcasing key profit and quantity metrics.&
 &lt;iframe src="https://public.tableau.com/views/Dashboard1_17512989779320/SalesDashboard?:showVizHome=no&amp;:embed=true"
  width="1000" height="700" frameborder="0"&gt;&lt;/iframe&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This project presents an interactive Tableau Sales Dashboard that consolidates key performance indicators (KPIs) for sales analysis. It enables users to monitor sales trends, revenue distribution, and performance by categories such as product, region, and time. The dashboard is designed for business managers and analysts to quickly understand performance drivers.&lt;/p&gt;</description></item><item><title/><link>https://itsaakashgupta.github.io/projects/quickbite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itsaakashgupta.github.io/projects/quickbite/</guid><description/></item></channel></rss>
+&lt;p&gt;This project presents an interactive Tableau Sales Dashboard that consolidates key performance indicators (KPIs) for sales analysis. It enables users to monitor sales trends, revenue distribution, and performance by categories such as product, region, and time. The dashboard is designed for business managers and analysts to quickly understand performance drivers.&lt;/p&gt;</description></item></channel></rss>
