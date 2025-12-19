@@ -3,8 +3,8 @@ date: 2021-01-09 05:20:35 +0300
 draft: false
 title: 🐾 Animal Shelter Operations Analytics
 subtitle: This project analyzes animal shelter operations data to uncover actionable insights related to intake patterns, outcomes, live-release performance, length of stay (LOS), and repeat intakes.
-tags: [PowerBI, MySQL]
-image: '/images/animal_shelter.png'
+tags: [PowerBI, ChatGpt]
+image: '/images/animal shelter.png'
 demo_url: 'https://app.powerbi.com/view?r=eyJrIjoiZDVjNTExZWItMWU4OS00Y2JiLWIyMzAtOTBlM2ZkZGVkZDNjIiwidCI6IjcyODYxZmY5LTM0ZmMtNGUyYy1iNjgzLTAwZTQxNmY2NjBmYyJ9'
 weight: 98
 seo:
@@ -15,169 +15,158 @@ seo:
   open_graph_type:
   no_index: false
 ---
+# 🐾 Animal Shelter Operations Analytics  
+### Power BI Dashboard | ZoomCharts Challenge
 
-## 📌 Introduction
+An end-to-end analytics project built using **Power BI** and **ZoomCharts**, focused on understanding animal shelter operations and generating **data-driven insights** to improve save rates, reduce length of stay (LOS), and support operational decision-making.
 
-This project **analyzes animal shelter operations** data to uncover actionable insights related to **intake patterns, outcomes, live-release performance, length of stay (LOS), and repeat intakes.**
+---
 
-The objective is not only to visualize trends, but to support data-driven decision-making for:
+## 📌 Project Overview
 
-- Shelter capacity planning
+Animal shelters operate under capacity, staffing, and time constraints.  
+This project analyzes **animal intake and outcome data** to identify operational patterns, performance gaps, and improvement opportunities related to:
 
-- Staffing and resource allocation
+- Intake volume & seasonality
+- Adoption and live-release performance
+- Length of stay (LOS)
+- Repeat intakes
+- Resource and prevention strategies
 
-- Improving save rates
+The goal is to move beyond reporting and deliver **actionable insights** that support animal welfare and shelter efficiency.
 
-- Reducing length of stay
+---
 
-- Designing prevention and outreach programs
+## 📂 Dataset Description
 
-The project was built as part of the **ZoomCharts / DataDNA Analytics Challenge**, with a strong emphasis on **storytelling, interactivity, and business impact.**
+**Source:**  
+City of Long Beach Animal Care Services (via DataDNA / ZoomCharts Challenge)
 
-# 📂 Dataset Overview
+### What the dataset represents
+Each record corresponds to an **animal intake event**, capturing the full lifecycle of an animal’s shelter stay—from intake to outcome.
 
-### Dataset Name:
-Animal Shelter Intakes and Outcomes – City of Long Beach Animal Care Services
+### Key attributes include:
+- **Animal Details:** Species, breed, age, sex, color
+- **Intake Information:** Intake date, intake type, intake condition, intake source
+- **Outcome Information:** Outcome type, outcome date, live-release indicators
+- **Operational Fields:** Length of stay, current resident status
 
-## What the dataset is about
+This structure enables **longitudinal analysis**, including repeat intakes.
 
-The dataset contains detailed records of animals entering and leaving the shelter, including:
+---
 
-- Animal characteristics
+## 🧹 Data Preparation & Cleaning
 
-- Intake circumstances
+Significant preparation was required to ensure analytical accuracy.
 
-- Outcomes and timelines
+### Key steps performed:
+- Parsed and standardized **date fields** (DOB, intake date, outcome date)
+- Corrected **negative or invalid age values**
+- Handled missing DOB values safely
+- Cleaned and standardized **text fields**
+- Replaced missing categorical values (e.g., secondary color)
+- Created a **standardized outcome classification** to simplify analysis
 
-- Shelter stay duration
+These steps ensured the data was **consistent, reliable, and visualization-ready**.
 
-Each row represents an **individual intake record**, allowing longitudinal analysis for repeat intakes.
+---
 
+## 🔧 Data Transformation & Feature Engineering
 
-## 🧾 What the Dataset Contains
+To support deeper analysis, several calculated fields and measures were created.
 
-Key data fields include:
-
-- **Animal Information:** Species, breed, age, sex, color
-
-- **Intake Details:** Intake date, intake type, intake condition, intake source
-
-- **Outcome Details:** Outcome type, outcome date, live-release indicators
-
-- **Operational Metrics:** Length of stay, current shelter status
-
-This structure enables analysis across **time, species, age groups, conditions, and outcomes.**
-
-# 🧹 Data Preparation & Cleaning
-
-Significant effort was invested in preparing the data for reliable analysis.
-
-## Key Cleaning Steps
-
-- **Handled missing Date of Birth (DOB)** values and corrected date formats using locale-aware parsing
-
-- **Corrected negative age** values caused by DOB recorded after intake date
-
-- **Standardized text fields**, including animal names and categorical columns
-
-- **Replaced missing secondary colors** with an explicit category to avoid visual exclusion
-
-- **Created a standardized outcome** classification to group outcomes into meaningful categories (Live, Deceased, Current, Other)
-
-# 🔧 Data Transformation & Feature Engineering
-
-To support deeper analysis, several transformations and calculated fields were created.
-
-## Key Transformations & Measures
-
-- **Age at Intake** (calculated correctly with error handling)
-
+### Key transformations:
+- **Age at Intake** (calculated with validation)
 - **Age Groups** (Baby, Young, Adult, Senior)
+- **Length of Stay (LOS)**  
+  - Includes animals still in shelter
+- **Live Release Rate (LRR)**  
+  - Excludes current residents from denominator
+- **Repeat Intake Flag**  
+  - Identifies animals with multiple intake records
+- **Calendar Table**  
+  - Enables YoY, monthly, and weekday analysis
 
-- **Length of Stay (LOS)** calculated dynamically for both completed and active cases
+These transformations enabled accurate KPIs and operational insights.
 
-- **Live Release Rate (LRR)** excluding current residents from the denominator
+---
 
-- **Repeat Intake Flag** to identify animals entering the shelter multiple times
+## 📊 Dashboard & Analysis Highlights
 
-- **Calendar Table** for robust time intelligence (YoY, monthly, weekday analysis)
+The Power BI report answers key operational questions such as:
 
-These transformations enabled **accurate KPIs, trend analysis, and segmentation.**
+- How do intakes and outcomes vary over time?
+- Are there seasonal or weekday intake patterns?
+- Which species, age groups, or conditions drive long LOS?
+- Which intake sources contribute most to volume?
+- Which animals are at risk of repeat intake?
+- What actions could improve save rates and reduce LOS?
 
-# 📊 Analysis & Dashboard Highlights
-
-The Power BI report focuses on answering real operational questions, including:
-
-- How intake and outcome volumes change over time
-
-- Seasonal and weekday intake patterns affecting staffing
-
-- Differences in adoption, LRR, and LOS by species and age
-
-- Intake conditions and outcome types driving long shelter stays
-
-- Identification of high-risk groups contributing to repeat intakes
-
-- Data-driven actions to improve save rates and reduce LOS
-
-Interactive visuals were built using **ZoomCharts** to enable:
-
+Interactive visuals were built using **ZoomCharts** to support:
 - Drill-down exploration
-
 - Cross-filtering
-
 - Intuitive navigation for business users
 
+---
 
-## 🔍 Biggest Takeaways from the Dataset
+## 🔍 Key Insights
 
-- Intake volumes show **clear seasonal and weekday patterns,** enabling proactive staffing and foster planning
+- Intakes peak during **summer months** and mid-week, enabling proactive staffing plans
+- **Cat intakes surge in summer**, driving longer LOS compared to dogs
+- Adoption rates have improved significantly over time, but **live-release rates fluctuate**
+- **Age, species, intake condition, and outcome type** strongly influence LOS
+- Repeat intakes are concentrated in specific outcome pathways, indicating prevention gaps
 
-- **Cats experience longer LOS than dogs,** particularly during summer intake surges
+---
 
-- Adoption rates have improved significantly over time, but **live-release rates remain volatile**
+## 🎯 Data-Driven Recommendations
 
-- **Age, species, and intake condition** are strong predictors of LOS and outcomes
-
-Repeat intakes are concentrated in specific outcome pathways, indicating prevention gaps
-
-These insights highlight that **targeted interventions outperform blanket solutions.**
-
-
-
-# 📈 Data-Driven Recommendations
-
-Based on the analysis, the most impactful actions include:
-
-- Expanding foster capacity ahead of seasonal peaks
-
+Based on the analysis, high-impact actions include:
+- Seasonal foster and staffing expansion
 - Targeted adoption campaigns for seniors and long-stay animals
-
 - Medical fast-tracking for mild-condition cases
+- Post-adoption and post–return-to-owner follow-up programs
+- Community prevention initiatives focused on high-volume intake sources
 
-- Post-adoption and post–return-to-owner follow-ups
+---
 
-- Community prevention programs focused on high-volume intake sources
+## 🌱 Personal Learning & Growth
 
+This project strengthened my skills in:
+- Power BI data modeling and DAX
+- KPI design grounded in business logic
+- Analytical storytelling for decision-makers
+- Using ZoomCharts for interactive insights
+- Translating analysis into operational recommendations
 
-##🌱 Personal Learning & Growth
+Most importantly, it reinforced that **effective analytics is about driving decisions—not just building dashboards**.
 
-Through this project, I strengthened my skills in:
+---
 
-- Power BI data modeling and advanced DAX
+## 🧾 Conclusion
 
-- Designing KPIs that reflect real operational logic
+This project demonstrates how operational data can be transformed into **actionable insights** that improve animal welfare outcomes and optimize shelter operations.
 
-- Turning exploratory analysis into decision-ready insights
+It reflects a complete analytics workflow:
+**data preparation → analysis → insight → recommendation**.
 
-- Using ZoomCharts for interactive, business-focused storytelling
+---
 
-- Writing clear, stakeholder-friendly analytical narratives
+## 🔗 Project Links
 
-Most importantly, I learned that **effective analytics is about clarity, prioritization, and impact—not just visuals.**
+- 📊 **Interactive Power BI Report:**  
+  [Power BI](https://app.powerbi.com/view?r=eyJrIjoiZDVjNTExZWItMWU4OS00Y2JiLWIyMzAtOTBlM2ZkZGVkZDNjIiwidCI6IjcyODYxZmY5LTM0ZmMtNGUyYy1iNjgzLTAwZTQxNmY2NjBmYyJ9)
 
-# 🧾 Conclusion
+- 💼 **LinkedIn Post:**  
+  🌐 [LinkedIN](https://www.linkedin.com/posts/itsaakash-gupta_powerbi-dataanalytics-businessintelligence-activity-7407623871224352768-9u8Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCRyfQBTk3HGu9xZXL8jzIrUkpjBBdZFb4)
 
-This project demonstrates how operational data can be transformed into **meaningful insights that improve outcomes,** optimize resources, and support animal welfare.
+---
 
-By combining solid data preparation, thoughtful KPI design, and interactive storytelling, the dashboard delivers value to both **analysts and decision-makers.**
+## 👤 Author
+
+Built by **Akash Gupta**  
+- LinkedIn: https://www.linkedin.com/in/itsaakash-gupta  
+- GitHub:   https://github.com/itsaakash-gupta  
+- Portfolio: https://itsaakashgupta.github.io/
+
+⭐ If you find this project interesting, feel free to connect or share feedback!
