@@ -4,7 +4,7 @@ draft: false
 title: 🐾 Animal Shelter Operations Analytics
 subtitle: This project analyzes animal shelter operations data to uncover actionable insights related to intake patterns, outcomes, live-release performance, length of stay (LOS), and repeat intakes.
 tags: [PowerBI, ChatGpt]
-image: '/images/animal shelter.png'
+image: '/images/animal_main.png'
 demo_url: 'https://app.powerbi.com/view?r=eyJrIjoiZDVjNTExZWItMWU4OS00Y2JiLWIyMzAtOTBlM2ZkZGVkZDNjIiwidCI6IjcyODYxZmY5LTM0ZmMtNGUyYy1iNjgzLTAwZTQxNmY2NjBmYyJ9'
 weight: 98
 seo:
