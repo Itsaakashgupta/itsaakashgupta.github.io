@@ -54,6 +54,9 @@ Each record corresponds to an **animal intake event**, capturing the full lifecy
 This structure enables **longitudinal analysis**, including repeat intakes.
 
 ---
+![Homepage](/images/animal_shelter.png)
+**Homepage**
+
 
 ## 🧹 Data Preparation & Cleaning
 
